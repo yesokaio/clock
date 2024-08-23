@@ -6,33 +6,40 @@ body {
     margin: 0;
     background-color: #282c34;
     color: white;
-    font-family: 'Roboto', sans-serif; /* Verwende die Roboto-Schriftart */
+    font-family: 'Roboto', sans-serif;
 }
 
 .clock-container {
     display: flex;
-    flex-direction: column; /* Stellt Datum und Uhrzeit übereinander dar */
+    flex-direction: column; 
     align-items: center;
     position: relative;
 }
 
 .date {
     font-size: 1.5rem; /* Größe des Datums */
-    margin-bottom: 10px; /* Abstand zwischen Datum und Uhrzeit */
+    margin-bottom: 10px; 
 }
 
 .time {
-    font-size: 3rem; /* Größe der Uhrzeit */
+    font-size: 2.5rem; /* Größe der Uhrzeit */
     font-weight: bold;
 }
 
 .color-icon {
-    font-size: 1rem; /* Kleinere Schriftgröße für "Farbe" */
+    display: flex;
+    align-items: center;
+    font-size: 1rem; /* Schriftgröße für das Icon */
     cursor: pointer;
     margin-top: 20px;
-    color: #666; /* Farbe des Textes */
-    font-weight: 300; /* Dünnere Schriftart */
-    background: none; /* Kein Hintergrund */
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: #666; /* Farbe der Punkte */
+    border-radius: 50%; /* Macht die Punkte rund */
+    margin: 0 3px; /* Abstand zwischen den Punkten */
 }
 
 .color-menu {

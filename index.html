@@ -10,7 +10,11 @@
     <div class="clock-container">
         <div class="date" id="date">Datum</div>
         <div class="time" id="time">00:00:00</div>
-        <div class="color-icon" id="color-icon">Farbe</div> <!-- Text anstelle des Icons -->
+        <div class="color-icon" id="color-icon">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div> <!-- Icon -->
     </div>
     <div class="color-menu" id="color-menu">
         <h3>Wähle eine Farbe:</h3>
@@ -18,8 +22,6 @@
         <label for="bg-color-picker">Hintergrund</label><br>
         <input type="color" id="text-color-picker" value="#ffffff">
         <label for="text-color-picker">Text</label><br>
-        <input type="color" id="box-color-picker" value="#444444">
-        <label for="box-color-picker">Kästchen</label><br>
     </div>
     <script src="script.js"></script>
 </body>

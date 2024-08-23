@@ -11,14 +11,12 @@ function updateDateTime() {
 function applyColors() {
     const bgColor = localStorage.getItem('bgColor') || '#282c34';
     const textColor = localStorage.getItem('textColor') || '#ffffff';
-    const boxColor = localStorage.getItem('boxColor') || '#444444';
 
     document.body.style.backgroundColor = bgColor;
     document.body.style.color = textColor;
 
     document.getElementById('bg-color-picker').value = bgColor;
     document.getElementById('text-color-picker').value = textColor;
-    document.getElementById('box-color-picker').value = boxColor;
 }
 
 document.getElementById('color-icon').addEventListener('click', function() {
@@ -36,12 +34,6 @@ document.getElementById('text-color-picker').addEventListener('input', function(
     const color = event.target.value;
     document.body.style.color = color;
     localStorage.setItem('textColor', color);
-});
-
-document.getElementById('box-color-picker').addEventListener('input', function(event) {
-    const color = event.target.value;
-    // Es gibt keine Kästchen mehr, daher ist keine weitere Anwendung der Farbe nötig
-    localStorage.setItem('boxColor', color);
 });
 
 // Initialisiere das Datum, die Zeit und wende die gespeicherten Farben an
