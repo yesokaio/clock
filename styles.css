@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Verwende die Roboto-Schriftart */
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column; /* Stellt Datum und Uhrzeit übereinander dar */
+    align-items: center;
+    position: relative;
+}
+
+.date {
+    font-size: 1.5rem; /* Größe des Datums */
+    margin-bottom: 10px; /* Abstand zwischen Datum und Uhrzeit */
+}
+
+.time {
+    font-size: 3rem; /* Größe der Uhrzeit */
+    font-weight: bold;
+}
+
+.color-icon {
+    font-size: 1rem; /* Kleinere Schriftgröße für "Farbe" */
+    cursor: pointer;
+    margin-top: 20px;
+    color: #666; /* Farbe des Textes */
+    font-weight: 300; /* Dünnere Schriftart */
+    background: none; /* Kein Hintergrund */
+}
+
+.color-menu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 80%; /* Verschiebt das Menü weiter nach links */
+    transform: translateY(-50%);
+    background-color: #444;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1000; /* Sicherstellen, dass das Menü immer oben angezeigt wird */
+}
+
+.color-menu h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.color-menu input[type="color"] {
+    margin: 5px 0;
+}

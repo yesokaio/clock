@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uhrzeit-Anzeige mit Farbauswahl</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="date" id="date">Datum</div>
+        <div class="time" id="time">00:00:00</div>
+        <div class="color-icon" id="color-icon">Farbe</div> <!-- Text anstelle des Icons -->
+    </div>
+    <div class="color-menu" id="color-menu">
+        <h3>Wähle eine Farbe:</h3>
+        <input type="color" id="bg-color-picker" value="#282c34">
+        <label for="bg-color-picker">Hintergrund</label><br>
+        <input type="color" id="text-color-picker" value="#ffffff">
+        <label for="text-color-picker">Text</label><br>
+        <input type="color" id="box-color-picker" value="#444444">
+        <label for="box-color-picker">Kästchen</label><br>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
